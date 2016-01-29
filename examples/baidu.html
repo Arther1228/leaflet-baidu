@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
         <script src="../lib/leaflet-src.js"></script>
         <script
-            src="http://api.map.baidu.com/api?v=1.5&ak=wEdGBRYrr5t1tF9X9cGbSmkB"
+            src="http://api.map.baidu.com/api?v=2.0&ak=O11Xb43yeY8ywfd4ZQGbUV8G"
             type="text/javascript"
         >
         </script>
@@ -18,19 +18,19 @@
                 {
                     'crs': L.CRS.BEPSG3857,
                     'center': [
-                        39.915, //Coordinate of Tian'an Men of Baidu Coordinate
-                        116.404
+                        31.806868, //Coordinate of Tian'an Men of Baidu Coordinate
+                        117.294663
                     ],
                     'zoom': 13,
-                    'minZoom': 3,
+                    'minZoom': 5,
                     'maxZoom': 18,
                     //todo: is that possible to add it in TileLayer Constructor?
                     'baidu': true
                 }
             );
-            var baidu = new L.Baidu('wEdGBRYrr5t1tF9X9cGbSmkB');
+            var baidu = new L.Baidu('O11Xb43yeY8ywfd4ZQGbUV8G');
             map.addLayer(baidu);
-            L.marker([39.915, 116.404]).addTo(map);
+            L.marker([31.915, 117.404]).addTo(map);  
         </script>
     </body>
 </html>
